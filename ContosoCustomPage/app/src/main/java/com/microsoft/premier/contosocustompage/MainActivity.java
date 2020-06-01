@@ -2,10 +2,10 @@ package com.microsoft.premier.contosocustompage;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.res.Resources;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.widget.TextView;
+
+import com.microsoft.premier.activitybehaviors.MainActivityBehavior;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,6 +17,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         _behavior = new MainActivityBehavior(this);
-        _behavior.SetupInterface();
+        _behavior.SetupInterface(R.id.counter_label, R.id.button_increment_counter);
     }
 }

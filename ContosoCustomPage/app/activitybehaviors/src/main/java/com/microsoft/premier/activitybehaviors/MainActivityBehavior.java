@@ -1,6 +1,7 @@
-package com.microsoft.premier.contosocustompage;
+package com.microsoft.premier.activitybehaviors;
 
 import android.app.Activity;
+import android.content.res.Resources;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -15,10 +16,10 @@ public class MainActivityBehavior {
         _activity = mainActivity;
     }
 
-    public void SetupInterface(){
-        counter_label = _activity.findViewById(R.id.counter_label);
+    public void SetupInterface(int R_id_counter_label, int R_id_button_increment_counter){
+        counter_label = _activity.findViewById(R_id_counter_label);
 
-        button_increment = _activity.findViewById(R.id.button_increment_counter);
+        button_increment = _activity.findViewById(R_id_button_increment_counter);
         button_increment.setOnClickListener(mButtonListener);
     }
 

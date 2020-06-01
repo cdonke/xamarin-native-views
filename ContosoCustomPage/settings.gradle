@@ -1,2 +1,3 @@
+include ':app:activitybehaviors'
 include ':app'
 rootProject.name = "ContosoCustomPage"
