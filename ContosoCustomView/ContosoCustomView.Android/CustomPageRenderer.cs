@@ -14,8 +14,6 @@ namespace ContosoCustomView.Droid
         private Android.Views.View _view;
         
         private Activity _activity;
-        private Android.Widget.TextView lblCounter;
-        private Android.Widget.Button button;
 
         public CustomPageRenderer(Context context) : base(context){}
 
@@ -27,9 +25,9 @@ namespace ContosoCustomView.Droid
                 return;
 
             SetupInterface();
-            SetupInteractions();
-            AddView(_view);
+            SetupBehaviors();
         }
+
 
         protected override void OnLayout(bool changed, int l, int t, int r, int b)
         {
@@ -47,21 +45,21 @@ namespace ContosoCustomView.Droid
             _activity = this.Context as Activity;
             _view = _activity.LayoutInflater.Inflate(Resource.Layout.CustomLayout, this, false);
 
-            lblCounter = _view.FindViewById<Android.Widget.TextView>(Resource.Id.counter_label);
-            button = _view.FindViewById<Android.Widget.Button>(Resource.Id.button_increment_counter);
+            _activity.SetContentView(_view);
         }
-
-        private void SetupInteractions()
+        private void SetupBehaviors()
         {
-            button.Click += Button_Click;
-        }
+            var behavior = new Com.Microsoft.Premier.Activitybehaviors.MainActivityBehavior(_activity);
 
-        private void Button_Click(object sender, EventArgs e)
-        {
-            if (int.TryParse(lblCounter.Text, out int nClicks))
-                lblCounter.Text = (++nClicks).ToString();
-            else
-                lblCounter.Text = "-1";
+            //var label = _view.FindViewById<Android.Widget.TextView>(Resource.Id.counter_label);
+            //var button = _view.FindViewById<Android.Widget.Button>(Resource.Id.button_increment_counter);
+
+            // OR
+            
+            var label = (Java.Lang.Integer)Resource.Id.counter_label;
+            var button = (Java.Lang.Integer)Resource.Id.button_increment_counter;
+
+            behavior.SetupInterface(label, button);
         }
     }
 }
