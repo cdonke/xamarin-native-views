@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+    <string name="button_text">Click me!</string>
+    <string name="label_text_block_1">Button was clicked</string>
+    <string name="label_text_block_2">times!</string>
+</resources>
