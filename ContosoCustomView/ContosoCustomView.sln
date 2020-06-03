@@ -10,6 +10,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContosoCustomView", "Contos
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AndroidDummyAppBinding", "..\Android Projects\AndroidDummyAppBinding\AndroidDummyAppBinding.csproj", "{E76B7137-5565-4FB9-8A61-F6CB41AFE9BE}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Android Projects", "Android Projects", "{3722D6EB-0CBF-4C27-99F0-2FA67B7542BE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "iOS Projects", "iOS Projects", "{8F5A8ADC-753F-47CE-B1A0-2067BD6D323E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Xamarin", "Xamarin", "{7FAAB026-2A99-49DD-B985-4B351C6CBAE5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -72,6 +78,12 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F6794D95-96DA-4AFF-99CC-B93D4467EAC1} = {7FAAB026-2A99-49DD-B985-4B351C6CBAE5}
+		{5F5A9135-208A-4032-B132-FE89C8BF2775} = {7FAAB026-2A99-49DD-B985-4B351C6CBAE5}
+		{26046401-E9C5-4B00-A6EA-E0F9978CE6EB} = {7FAAB026-2A99-49DD-B985-4B351C6CBAE5}
+		{E76B7137-5565-4FB9-8A61-F6CB41AFE9BE} = {3722D6EB-0CBF-4C27-99F0-2FA67B7542BE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {92064D32-2640-4879-A156-8AE997033333}

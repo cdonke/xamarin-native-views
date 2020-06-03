@@ -1,4 +1,4 @@
-package com.microsoft.premier.activitybehaviors;
+package com.microsoft.premier.AndroidDummyApp.Behaviors;
 
 import android.app.Activity;
 import android.content.res.Resources;

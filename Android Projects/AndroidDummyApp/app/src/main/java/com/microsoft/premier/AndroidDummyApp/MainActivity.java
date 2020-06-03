@@ -1,11 +1,9 @@
-package com.microsoft.premier.contosocustompage;
+package com.microsoft.premier.AndroidDummyApp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.res.Resources;
 import android.os.Bundle;
-
-import com.microsoft.premier.activitybehaviors.MainActivityBehavior;
+import com.microsoft.premier.AndroidDummyApp.Behaviors.*;
 
 public class MainActivity extends AppCompatActivity {
 

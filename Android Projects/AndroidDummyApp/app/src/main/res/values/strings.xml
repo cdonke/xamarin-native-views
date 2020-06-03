@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ContosoCustomPage</string>
+    <string name="app_name">Android Dummy App</string>
     <string name="button_text">Click me!</string>
     <string name="label_text_block_1">Button was clicked</string>
     <string name="label_text_block_2">times!</string>
