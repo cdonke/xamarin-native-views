@@ -1,0 +1,5 @@
+version: "Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
+options: "bb761c28672c3347522d5ed45b3557d1"
+build_time: [1591194604, 669824000]
+inputs:
+  "/Users/cdonke/Projects/modernappsbrazil/xamarin-native-page/iOS Projects/iOSDummyAppBehavior/iOSDummyAppBehavior/MainViewBehavior.swift": [9223372036, 854775807]

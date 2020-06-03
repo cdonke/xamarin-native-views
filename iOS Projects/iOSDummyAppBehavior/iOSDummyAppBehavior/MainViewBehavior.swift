@@ -6,4 +6,19 @@
 //  Copyright © 2020 Christiano Donke. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+@objc(MainViewBehavior)
+public class MainViewBehavior: NSObject {
+    @IBOutlet
+    @objc
+    public weak var lblCounter: UILabel!
+    
+    @IBAction
+    @objc
+    public func btnIncrement_OnClick(sender:UIButton) {
+        var n = Int(lblCounter.text ?? "-2") ?? -2;
+        n+=1;
+        lblCounter.text=String(n);
+    }
+}

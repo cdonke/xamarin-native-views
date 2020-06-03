@@ -134,5 +134,9 @@
       <Project>{26046401-E9C5-4B00-A6EA-E0F9978CE6EB}</Project>
       <Name>ContosoCustomView</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\iOS Projects\iOSDummyAppBinding\iOSDummyAppBinding.csproj">
+      <Project>{17331A5A-1F95-4707-8C0D-2C7EDBCA1177}</Project>
+      <Name>iOSDummyAppBinding</Name>
+    </ProjectReference>
   </ItemGroup>
 </Project>

@@ -38,7 +38,7 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zDw-4g-Rp9">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zDw-4g-Rp9" customClass="lblIncrement">
                                 <rect key="frame" x="175" y="433" width="64" height="30"/>
                                 <state key="normal" title="Click Me!"/>
                             </button>
@@ -52,6 +52,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="btnIncrement_OnClick" destination="zDw-4g-Rp9" id="UTp-65-4uJ"/>
+                        <outlet property="lblCounter" destination="Or6-yG-C8T" id="NKv-eb-1Pb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

@@ -1,0 +1,11 @@
+framework module iOSDummyAppBehavior {
+  umbrella header "iOSDummyAppBehavior.h"
+
+  export *
+  module * { export * }
+}
+
+module iOSDummyAppBehavior.Swift {
+    header "iOSDummyAppBehavior-Swift.h"
+    requires objc
+}

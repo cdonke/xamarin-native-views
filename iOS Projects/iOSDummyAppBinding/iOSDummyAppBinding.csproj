@@ -41,15 +41,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ObjcBindingApiDefinition Include="ApiDefinition.cs" />
+    <ObjcBindingApiDefinition Include="ApiDefinitions.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ObjcBindingCoreSource Include="Structs.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <NativeReference Include="..\..\..\..\..\Downloads\iOSDummyAppBehavior.framework">
+    <NativeReference Include="..\iOSDummyAppBehavior\build\Release-fat\iOSDummyAppBehavior.framework">
       <Kind>Framework</Kind>
-      <SmartLink>False</SmartLink>
+      <Frameworks>Foundation UIKit</Frameworks>
     </NativeReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.ObjCBinding.CSharp.targets" />

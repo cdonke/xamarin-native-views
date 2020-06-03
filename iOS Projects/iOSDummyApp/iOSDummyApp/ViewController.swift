@@ -14,5 +14,14 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    
+    
+    @IBOutlet weak var lblCounter: UILabel!
+    
+    @IBAction func btnIncrement_OnClick() {
+        var n = Int(lblCounter.text ?? "-2") ?? -2;
+        n+=1;
+        lblCounter.text=String(n);
+    }
 }
 
