@@ -1,0 +1,13 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': "/Users/cdonke/Projects/modernappsbrazil/xamarin-native-page/iOS Projects/iOSDummyAppBehavior/build/Release-iphoneos/iOSDummyAppBehavior.framework/Modules"
+    'contents': [{
+      'type': 'file',
+      'name': "module.modulemap",
+      'external-contents': "/Users/cdonke/Projects/modernappsbrazil/xamarin-native-page/iOS Projects/iOSDummyAppBehavior/build/iOSDummyAppBehavior.build/Release-iphoneos/iOSDummyAppBehavior.build/unextended-module.modulemap",
+    }]
+  }]
+}
