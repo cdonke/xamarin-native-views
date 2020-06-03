@@ -102,9 +102,9 @@
     <Folder Include="Resources\drawable\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ActivityBindingLib\ActivityBindingLib.csproj">
+    <ProjectReference Include="..\..\Android Projects\AndroidDummyAppBinding\AndroidDummyAppBinding.csproj">
       <Project>{e76b7137-5565-4fb9-8a61-f6cb41afe9be}</Project>
-      <Name>ActivityBindingLib</Name>
+      <Name>AndroidDummyAppBinding</Name>
     </ProjectReference>
     <ProjectReference Include="..\ContosoCustomView\ContosoCustomView.csproj">
       <Project>{26046401-E9C5-4B00-A6EA-E0F9978CE6EB}</Project>

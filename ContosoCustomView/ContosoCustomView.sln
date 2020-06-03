@@ -8,7 +8,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContosoCustomView.iOS", "Co
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContosoCustomView", "ContosoCustomView\ContosoCustomView.csproj", "{26046401-E9C5-4B00-A6EA-E0F9978CE6EB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ActivityBindingLib", "ActivityBindingLib\ActivityBindingLib.csproj", "{E76B7137-5565-4FB9-8A61-F6CB41AFE9BE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AndroidDummyAppBinding", "..\Android Projects\AndroidDummyAppBinding\AndroidDummyAppBinding.csproj", "{E76B7137-5565-4FB9-8A61-F6CB41AFE9BE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
