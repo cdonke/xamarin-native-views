@@ -9,21 +9,10 @@
 import UIKit
 
 class ViewController: UIViewController {
-    @IBOutlet weak var lblCounter: UILabel!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-    }
-    
-    
-    @IBAction func btnIncrement_OnClick(_ sender: Any) {
-        var value = Int(lblCounter.text ?? "0") ?? -2;
-        value+=1;
-        
-        lblCounter.text = String(value);
-        
-        lblCounter.sizeToFit();
     }
 }
 
