@@ -5,8 +5,5 @@ namespace ContosoCustomView
 {
     public class CustomPage : ContentPage
     {
-        public CustomPage()
-        {
-        }
     }
 }
