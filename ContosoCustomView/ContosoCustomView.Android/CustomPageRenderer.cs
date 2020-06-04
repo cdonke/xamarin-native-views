@@ -12,10 +12,10 @@ namespace ContosoCustomView.Droid
     public class CustomPageRenderer : PageRenderer
     {
         private Android.Views.View _view;
-        
         private Activity _activity;
 
-        public CustomPageRenderer(Context context) : base(context){}
+        public CustomPageRenderer(Context context) : base(context)
+        {}
 
         protected override void OnElementChanged(ElementChangedEventArgs<Page> e)
         {
@@ -49,7 +49,7 @@ namespace ContosoCustomView.Droid
         }
         private void SetupBehaviors()
         {
-            var behavior = new Com.Microsoft.Premier.Activitybehaviors.MainActivityBehavior(_activity);
+            var behavior = new Com.Microsoft.Premier.AndroidDummyApp.Behaviors.MainActivityBehavior(_activity);
 
             //var label = _view.FindViewById<Android.Widget.TextView>(Resource.Id.counter_label);
             //var button = _view.FindViewById<Android.Widget.Button>(Resource.Id.button_increment_counter);
