@@ -7,29 +7,18 @@ using Xamarin.Forms;
 namespace ContosoCustomView.iOS
 {
     [Register("MainViewController")]
-    public partial class MainViewController : UIViewController
+    public partial class MainViewController : iOSDummyAppBehavior.MainViewBehavior
     {
-        private readonly iOSDummyAppBehavior.MainViewBehavior _mainViewBehavior;
-
-        [Outlet]
-        private UILabel lblCounter { get; set; }
-
-        public MainViewController(IntPtr handle) : base(handle)
+        public MainViewController(IntPtr handle):base(handle)
         {
-            _mainViewBehavior = new iOSDummyAppBehavior.MainViewBehavior();
         }
 
-
-        public override void ViewDidLoad()
+        public MainViewController(NSCoder coder) : base(coder)
         {
-            base.ViewDidLoad();
-            _mainViewBehavior.LblCounter = lblCounter;
         }
 
-        [Action("btnIncrement_OnClick:")]
-        public void btnIncrement_OnClick(UIButton sender)
+        protected MainViewController(NSObjectFlag t) : base(t)
         {
-            _mainViewBehavior.BtnIncrement_OnClickWithSender(sender);
         }
     }
 }

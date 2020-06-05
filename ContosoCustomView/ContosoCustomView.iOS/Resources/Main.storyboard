@@ -41,9 +41,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zDw-4g-Rp9">
                                 <rect key="frame" x="175" y="433" width="64" height="30"/>
                                 <state key="normal" title="Click Me!"/>
-                                <connections>
-                                    <action selector="btnIncrement_OnClick:" destination="BYZ-38-t0r" id="2877" eventType="touchUpInside"/>
-                                </connections>
+                                <connections/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
