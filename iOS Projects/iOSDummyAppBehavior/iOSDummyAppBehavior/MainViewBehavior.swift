@@ -9,7 +9,7 @@
 import UIKit
 
 @objc(MainViewBehavior)
-public class MainViewBehavior: NSObject {
+public class MainViewBehavior: UIViewController {
     @IBOutlet
     @objc
     public weak var lblCounter: UILabel!
@@ -21,4 +21,10 @@ public class MainViewBehavior: NSObject {
         n+=1;
         lblCounter.text=String(n);
     }
+    
+    public override func viewDidLoad() {
+       super.viewDidLoad()
+       // Do any additional setup after loading the view.
+   }
 }
+
