@@ -6,7 +6,7 @@ using Android.Widget;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 
-[assembly:ExportRenderer(typeof(ContosoCustomView.CustomPage), typeof(ContosoCustomView.Droid.CustomPageRenderer))]
+[assembly: ExportRenderer(typeof(ContosoCustomView.CustomPage), typeof(ContosoCustomView.Droid.CustomPageRenderer))]
 namespace ContosoCustomView.Droid
 {
     public class CustomPageRenderer : PageRenderer
@@ -15,7 +15,7 @@ namespace ContosoCustomView.Droid
         private Activity _activity;
 
         public CustomPageRenderer(Context context) : base(context)
-        {}
+        { }
 
         protected override void OnElementChanged(ElementChangedEventArgs<Page> e)
         {
@@ -50,16 +50,6 @@ namespace ContosoCustomView.Droid
         private void SetupBehaviors()
         {
             var behavior = new Com.Microsoft.Premier.AndroidDummyApp.Behaviors.MainActivityBehavior(_activity);
-
-            //var label = _view.FindViewById<Android.Widget.TextView>(Resource.Id.counter_label);
-            //var button = _view.FindViewById<Android.Widget.Button>(Resource.Id.button_increment_counter);
-
-            // OR
-            
-            var label = (Java.Lang.Integer)Resource.Id.counter_label;
-            var button = (Java.Lang.Integer)Resource.Id.button_increment_counter;
-
-            behavior.SetupInterface(label, button);
         }
     }
 }
