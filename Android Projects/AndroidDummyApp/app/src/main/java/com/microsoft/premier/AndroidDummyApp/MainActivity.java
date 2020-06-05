@@ -14,6 +14,5 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         _behavior = new MainActivityBehavior(this);
-        _behavior.SetupInterface(R.id.counter_label, R.id.button_increment_counter);
     }
 }

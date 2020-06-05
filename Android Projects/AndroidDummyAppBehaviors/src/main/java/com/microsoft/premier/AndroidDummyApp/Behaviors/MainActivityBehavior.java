@@ -6,6 +6,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.microsoft.premier.AndroidDummyAppBehaviors.R;
+
 public class MainActivityBehavior {
     private Activity _activity;
 
@@ -14,6 +16,10 @@ public class MainActivityBehavior {
 
     public MainActivityBehavior(Activity activity) {
         _activity = activity;
+        counter_label = _activity.findViewById(R.id.counter_label);
+        button_increment = _activity.findViewById(R.id.button_increment_counter);
+
+        button_increment.setOnClickListener(mButtonListener);
     }
 
     /*public void SetupInterface(TextView label, Button button){
@@ -21,12 +27,12 @@ public class MainActivityBehavior {
         button.setOnClickListener(mButtonListener);
     }*/
 
-    public void SetupInterface(Integer R_id_label, Integer R_id_button){
+    /*public void SetupInterface(Integer R_id_label, Integer R_id_button){
         counter_label = _activity.findViewById(R_id_label);
 
         button_increment = _activity.findViewById(R_id_button);
         button_increment.setOnClickListener(mButtonListener);
-    }
+    }*/
 
     private View.OnClickListener mButtonListener = new View.OnClickListener() {
         public void onClick(View v) {
@@ -36,3 +42,4 @@ public class MainActivityBehavior {
         }
     };
 }
+
