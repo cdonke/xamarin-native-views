@@ -1,5 +1,3 @@
-package com.microsoft.premier.AndroidDummyApp;
-
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 public class MainActivity extends AppCompatActivity {
