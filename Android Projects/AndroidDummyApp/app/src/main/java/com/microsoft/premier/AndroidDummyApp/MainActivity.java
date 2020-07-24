@@ -2,8 +2,6 @@ package com.microsoft.premier.AndroidDummyApp;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import com.microsoft.premier.AndroidDummyApp.Behaviors.*;
-
 public class MainActivity extends AppCompatActivity {
 
     private MainActivityBehavior _behavior;
@@ -13,6 +11,17 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        _behavior = new MainActivityBehavior(this);
+        counter_label = _activity.findViewById(R.id.counter_label);
+        button_increment = _activity.findViewById(R.id.button_increment_counter);
+
+        button_increment.setOnClickListener(mButtonListener);
     }
+
+    private View.OnClickListener mButtonListener = new View.OnClickListener() {
+        public void onClick(View v) {
+            Integer n = Integer.parseInt((String)counter_label.getText());
+            ++n;
+            counter_label.setText(n.toString());
+        }
+    };
 }
